@@ -1,0 +1,4 @@
+CuraEngine.exe slice -v -p -j fdmprinter.def.json -o test.gcode -l test.stl
+
+//Use slice.php for slicing
+slice.php?slice={"infile":"test.stl","outfile":"test.gcode"}
