@@ -1,7 +1,9 @@
-# CuraEngine (Compiled, PHP bridge)
-aPrint slicer - PHP2CuraEngine bridge for Debian Buster on armv6l / v7, arm64, amd64 and windows
+<img src="https://raw.githubusercontent.com/tobychui/PHP2CuraEngine/master/img/banner.png">
 
-(And yes, Raspberry pi with Raspbian also works without the needs to install anything extra.)
+# PHP2CuraEngine
+PHP2CuraEngine bridge for Debian Buster on armv6l / v7, arm64, amd64 and windows.
+
+This is a PHP written wrapper for parsing CuraEngine slicing command on a given 3D model and output gcode to given location. This repo include compiled binary to run on Debian based system on multiple platforms with different CPU architectures. (And yes, Raspberry pi with Raspbian Buster also works without the needs to install anything extra.)
 
 ### Usage (slice.php)
 Required paramter: slice
@@ -27,7 +29,7 @@ slice.php?slice={"infile":"test.stl","outfile":"test.gcode"}
 //With custom defination files
 slice.php?slice={"infile":"test.stl","outfile":"test.gcode","extraDefs":["myprinter.def.json"]}
 
-//With custom defination files and settings (Not recommended)
+//With custom settings (Not recommended, as sometime slicing error will occurs if incorrect settings are passed in)
 slice.php?slice={"infile":"test.stl","outfile":"test.gcode","extraSettings":["layer_height=0.2","speed_print=50"]}
 ```
 
