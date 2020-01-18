@@ -38,9 +38,9 @@ Tested running on Debian Jessie (x86), Buster(x64), Armbian (arm64, orange pi ze
 
 
 ### Installation
-Copy and paste everything inside slice/ under your apache web root. The binarySelector will select which binary to execute using binarySelector.php. 
+Copy and paste everything inside src/ to or under your apache web root. The binarySelector will select which binary to execute using binarySelector.php. 
 
-Required Linux system command: uname
+**Required Linux system command: uname**
 
 ### Points to Notes
 1. This module's development has been terminated. (Aka this is a spin-off module from the platform we are working on)
