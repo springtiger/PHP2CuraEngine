@@ -46,6 +46,7 @@ Copy and paste everything inside src/ to or under your apache web root. The bina
 1. This module's development has been terminated. (Aka this is a spin-off module from the platform we are working on)
 2. You can use it whereever you like as soon as it is following the CuraEngine's license
 3. Feel free to ask questions, but bugs will no longer be fixed or the project be maintained. 
+4. On some Linux distro, you might need to add ```chdir('armv6l/');``` to binarySelector.php for it to load the .so files.
 
 ### License
 This project includes the compiled version of CuraEngine which you can find its source here:
